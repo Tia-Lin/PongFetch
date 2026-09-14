@@ -1,0 +1,99 @@
+{
+  "revision": "3.0",
+  "tag": "v3.0",
+  "repository": "https://github.com/Tia-Lin/PongFetch",
+  "checks": [
+    {
+      "file": "SmallPicker.stl",
+      "mesh_topology": "pass",
+      "triangles": 203868,
+      "components": 9
+    },
+    {
+      "file": "Collet.stl",
+      "mesh_topology": "pass",
+      "triangles": 3836,
+      "components": 1
+    },
+    {
+      "file": "ColletCap.stl",
+      "mesh_topology": "pass",
+      "triangles": 7596,
+      "components": 1
+    }
+  ],
+  "projects": [
+    {
+      "file": "prints/PongFetch_Rev3_Frame.3mf",
+      "archive_integrity": "pass",
+      "normal_parts": 2,
+      "modifiers": 8,
+      "settings": {
+        "printer_model": "Bambu Lab H2D",
+        "printer_settings_id": "Bambu Lab H2D 0.4 nozzle",
+        "wall_loops": "4",
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "sparse_infill_density": "15%",
+        "sparse_infill_pattern": "grid"
+      },
+      "material_assignments": [
+        {
+          "name": "PongFetch Rev3 body",
+          "slot": 4,
+          "profile": "Bambu PETG Basic @BBL H2D 0.4 nozzle",
+          "colour": "#FCE300"
+        },
+        {
+          "name": "PongFetch / Pick.Play. / open source / rev 3.0",
+          "slot": 2,
+          "profile": "Bambu PETG-CF @BBL H2D 0.4 nozzle",
+          "colour": "#16B08E"
+        }
+      ]
+    },
+    {
+      "file": "prints/PongFetch_Rev3_Handle_Parts.3mf",
+      "archive_integrity": "pass",
+      "normal_parts": 2,
+      "modifiers": 0,
+      "settings": {
+        "printer_model": "Bambu Lab X1 Carbon",
+        "printer_settings_id": "Bambu Lab X1 Carbon 0.4 nozzle",
+        "wall_loops": "4",
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "sparse_infill_density": "15%",
+        "sparse_infill_pattern": "grid"
+      },
+      "material_assignments": [
+        {
+          "name": "Collet_1",
+          "slot": 1,
+          "profile": "Bambu PETG Basic @BBL X1C",
+          "colour": "#034638"
+        },
+        {
+          "name": "ColletCap_1",
+          "slot": 1,
+          "profile": "Bambu PETG Basic @BBL X1C",
+          "colour": "#034638"
+        }
+      ]
+    }
+  ],
+  "sha256": {
+    "SmallPicker.scad": "fe1dada63914a5c2a9e855562ab651c6dc36fea982ba80b9ff8596c167dd9b98",
+    "SideLatch.scad": "a97c57c6f789e09f5400fb1ba0f8492db9b126923c95eabd41ed5c5579194480",
+    "ColletSocket.scad": "96e910ddf255fbf8d8c9cbcd9a7f4e2c960ea16dfec5b4c056d358da96a145b6",
+    "Branding.scad": "27de487318c5813a186a89918fa9be03fa91f84b7dc7add09f1f282fe00ec10c",
+    "SmallPicker.stl": "4bf398e0477f0b39be80fa4ce4e2f849601360ab2b217e9939d128c35e2e0691",
+    "Collet.stl": "cc1ca159841fbabfe41984fa3b7f73449dfcb704ffa9c6d7a8191dcd107f6f7a",
+    "ColletCap.stl": "f19a24c9f3e3d2972f37cffbcac4466654e146eb670139ca6ffe6026cd63e38c",
+    "prints/PongFetch_Rev3_Frame.3mf": "1fb5593087e473e268bf7707977f8ad792bcba96b0c2fae52324ad1fe692eac5",
+    "prints/PongFetch_Rev3_Handle_Parts.3mf": "663b7ce3c52f35cdb447f74c9b42fc6fdfd6b600f6b878176d1cf19d8574ec1f",
+    "LICENSE.md": "46f8858ba1acfd5d7f07bbae35fcfecadc725d77c64f1ea972cb41c898f72cf9",
+    "CC-BY-NC-SA-4.0.txt": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd"
+  },
+  "scope": "Topology and archive checks; no new native slice, physical print, self-intersection or lifetime certification."
+}

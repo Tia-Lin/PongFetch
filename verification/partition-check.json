@@ -1,0 +1,44 @@
+{
+  "file": "frame-base.stl",
+  "triangles": 213030,
+  "welded_vertices": 106477,
+  "bounds_min_mm": [
+    -113.69999694824219,
+    -108.69999694824219,
+    0.0
+  ],
+  "bounds_max_mm": [
+    129.2193603515625,
+    108.69999694824219,
+    59.59031295776367
+  ],
+  "dimensions_mm": [
+    242.9193572998047,
+    217.39999389648438,
+    59.59031295776367
+  ],
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "duplicate_triangles": 0,
+  "degenerate_index_triangles": 0,
+  "connected_components": 9,
+  "component_vertex_counts": [
+    57728,
+    7126,
+    6833,
+    6437,
+    6269,
+    5521,
+    5521,
+    5521,
+    5521
+  ],
+  "signed_volume_mm3": 146280.34802240567,
+  "method": "Exactly equal exported coordinates welded; triangle edge incidence; no self-intersection test",
+  "sha256": "7e39dc99cce6b066b1efd1a95229d955b17c2b9853e836f29d42c483d7673803",
+  "text_volume_mm3": 115.17549354367156,
+  "partition_recombined_difference_mm3": -1.7351942235585403e-12,
+  "text_outside_original_solid_mm3": 0.0,
+  "depth_mm": 0.6
+}
