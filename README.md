@@ -58,7 +58,7 @@ Omit `--parts` to also export the frame; that can take several minutes. Use `--o
 
 ## Repository and contributions
 
-This repository contains the current design, print files, documentation, compact verification reports, and [website source](website/README.md). Generated website downloads, slicer logs and old prototypes are excluded from the published tree. The website can be previewed locally; publishing this repository does not deploy the website or enable sales.
+This repository contains the product design, print files, documentation and compact verification reports. The product website is maintained separately; its application code is no longer part of this repository. Design downloads and releases remain available here. Slicer logs and old prototypes are excluded from the published tree.
 
 For a bug report or improvement, [open an issue](https://github.com/Tia-Lin/PongFetch/issues) with the revision, printer, nozzle, material, layer height, wall count and a photo. For a design change, include editable source and describe what you tested. Keep print orientation, support-free printing and net routing in mind.
 
