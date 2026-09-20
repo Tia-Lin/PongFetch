@@ -1,5 +1,7 @@
 # PongFetch handle tops — prototype 1
 
+**User feedback, 2026-09-20:** D works very well in the user's trial; A1 fits loosely. See [A2 same-height fit trials](../end-cap-a2/README.md) for the next A iteration. D geometry is unchanged. This feedback is not a quantified load or endurance test.
+
 Two interchangeable accessories for the **free end** of a PVC handle. These are separate prototypes; the tested rev3.0 picker, socket, collet and cap are unchanged. Target PVC outside diameter: **21.34 mm**. Neither accessory uses the pipe's inside diameter as a fit reference.
 
 ![Actual exported geometry](verification/design-overview.jpg)

@@ -1,0 +1,9 @@
+{
+  "A2_medium.stl": "b187cc52345416856035e95124a128494e1ef8598a5b6dece22ad8c40f737670",
+  "A2_Fit_Comparison_X2D_PETG_Basic.3mf": "0a870c9408ac50bf7b5fd39109bddc7bec18ff68b71b15aaacac157f9b6c12f7",
+  "A2_firm.stl": "de53e278a057843cb8aea39d0cd3bfd5f43e0f5cfd908c677048bc02204842c4",
+  "README.md": "08a0c346153c03552846c6a87bec256f3e6fd5078361d181de0eb432560f29b6",
+  "source/EndCapA.scad": "2479da92ef6d9b535c6867f9197d97dc65c5eb8b732971b9c54376f3d64f3735",
+  "verification/mesh-check.json": "94e8a01ebebc0c620827c0dfe03b0ab7eef306b11d3423719be66cd94f4b6ba4",
+  "verification/A2-slice-settings.json": "66e4a621b3095ed3eaa0422ff77a2a3c362f334693fd7892e50abca75a49a489"
+}
