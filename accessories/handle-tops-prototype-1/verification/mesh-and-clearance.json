@@ -1,0 +1,287 @@
+{
+  "D_body": {
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -17.700000762939453,
+        -17.700000762939453,
+        0.0
+      ],
+      [
+        17.700000762939453,
+        17.700000762939453,
+        67.19999694824219
+      ]
+    ],
+    "volume_mm3": 15908.006614641563,
+    "solid_mass_g_at_1.27": 20.203168400594787,
+    "manifold_status": "Error.NoError",
+    "sections": [
+      {
+        "z_mm": 0.1,
+        "area_mm2": 99.02445810248246,
+        "islands": 6
+      },
+      {
+        "z_mm": 0.3,
+        "area_mm2": 114.89815596041117,
+        "islands": 6
+      },
+      {
+        "z_mm": 0.5,
+        "area_mm2": 124.70141007096893,
+        "islands": 6
+      },
+      {
+        "z_mm": 1.1,
+        "area_mm2": 136.47902899887097,
+        "islands": 6
+      },
+      {
+        "z_mm": 5.1,
+        "area_mm2": 219.14380353245707,
+        "islands": 6
+      },
+      {
+        "z_mm": 16.7,
+        "area_mm2": 210.51826612134138,
+        "islands": 6
+      },
+      {
+        "z_mm": 18.1,
+        "area_mm2": 251.43395079419787,
+        "islands": 1
+      },
+      {
+        "z_mm": 29.7,
+        "area_mm2": 388.8034525002199,
+        "islands": 1
+      },
+      {
+        "z_mm": 41.3,
+        "area_mm2": 178.98547784864837,
+        "islands": 2
+      },
+      {
+        "z_mm": 55.1,
+        "area_mm2": 111.61508486180952,
+        "islands": 2
+      },
+      {
+        "z_mm": 62.7,
+        "area_mm2": 144.40017678736535,
+        "islands": 2
+      }
+    ]
+  },
+  "A_inlay": {
+    "watertight": true,
+    "winding": true,
+    "components": 2,
+    "bounds_mm": [
+      [
+        -5.350250244140625,
+        -7.03759765625,
+        0.0
+      ],
+      [
+        6.4499969482421875,
+        5.9499969482421875,
+        0.4000000059604645
+      ]
+    ],
+    "volume_mm3": 26.632000517809768,
+    "solid_mass_g_at_1.27": 0.033822640657618405,
+    "manifold_status": "Error.NoError"
+  },
+  "A_plain": {
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        9.199999809265137
+      ]
+    ],
+    "volume_mm3": 1232.1545089658384,
+    "solid_mass_g_at_1.27": 1.564836226386615,
+    "manifold_status": "Error.NoError"
+  },
+  "A_body": {
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        9.199999809265137
+      ]
+    ],
+    "volume_mm3": 1205.5225342431306,
+    "solid_mass_g_at_1.27": 1.531013618488776,
+    "manifold_status": "Error.NoError"
+  },
+  "A_fit_ring": {
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        4.799999237060547
+      ]
+    ],
+    "volume_mm3": 410.9353369288262,
+    "solid_mass_g_at_1.27": 0.5218878778996093,
+    "manifold_status": "Error.NoError"
+  },
+  "D_nut": {
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -17.5,
+        -17.5,
+        6.10351571594947e-06
+      ],
+      [
+        17.5,
+        17.5,
+        30.79999351501465
+      ]
+    ],
+    "volume_mm3": 7212.876287412549,
+    "solid_mass_g_at_1.27": 9.160352885013937,
+    "manifold_status": "Error.NoError",
+    "sections": [
+      {
+        "z_mm": 0.1,
+        "area_mm2": 177.75945634612123,
+        "islands": 1
+      },
+      {
+        "z_mm": 0.3,
+        "area_mm2": 178.46604827122223,
+        "islands": 1
+      },
+      {
+        "z_mm": 0.5,
+        "area_mm2": 179.17264014241124,
+        "islands": 1
+      },
+      {
+        "z_mm": 1.1,
+        "area_mm2": 181.29241560232657,
+        "islands": 1
+      },
+      {
+        "z_mm": 5.1,
+        "area_mm2": 195.42424454455943,
+        "islands": 1
+      },
+      {
+        "z_mm": 16.7,
+        "area_mm2": 240.01312882760453,
+        "islands": 1
+      },
+      {
+        "z_mm": 18.1,
+        "area_mm2": 272.23625159609423,
+        "islands": 1
+      },
+      {
+        "z_mm": 29.7,
+        "area_mm2": 257.92969942122954,
+        "islands": 1
+      },
+      {
+        "z_mm": 41.3,
+        "area_mm2": 0.0,
+        "islands": 1
+      },
+      {
+        "z_mm": 55.1,
+        "area_mm2": 0.0,
+        "islands": 1
+      },
+      {
+        "z_mm": 62.7,
+        "area_mm2": 0.0,
+        "islands": 1
+      }
+    ]
+  },
+  "assembly_scan": [
+    {
+      "travel_mm": 0,
+      "total_rigid_overlap_mm3": 0.0,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.5,
+      "total_rigid_overlap_mm3": 0.0,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.7,
+      "total_rigid_overlap_mm3": 3.0431435123406048,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 1,
+      "total_rigid_overlap_mm3": 35.00754818933335,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 1.5,
+      "total_rigid_overlap_mm3": 87.1985854257392,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 1.9,
+      "total_rigid_overlap_mm3": 120.45473539722862,
+      "above_fingers_overlap_mm3": 0.0,
+      "stop_zone_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 2,
+      "total_rigid_overlap_mm3": 127.85016759322802,
+      "above_fingers_overlap_mm3": 0.0004754687487671132,
+      "stop_zone_overlap_mm3": 0.0004754687487671132
+    },
+    {
+      "travel_mm": 2.1,
+      "total_rigid_overlap_mm3": 144.89231097269746,
+      "above_fingers_overlap_mm3": 9.986723209997933,
+      "stop_zone_overlap_mm3": 9.986723209997933
+    }
+  ],
+  "notes": "Finger/cone rigid intersections after 0.67 mm travel represent intended flexure, not a deformation or load simulation. Upper-thread/stop interference is checked separately."
+}
