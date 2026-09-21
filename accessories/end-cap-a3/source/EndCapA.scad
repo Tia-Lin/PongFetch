@@ -5,11 +5,11 @@ part="cap"; // [cap,body,inlay,fit_ring]
 fit="firm"; // [firm,id_21_54,id_21_44]
 assert(fit=="firm" || fit=="id_21_54" || fit=="id_21_44", "Unknown fit");
 pipe_od=21.34;
-// Keep the exterior fixed so the trial changes only the cylindrical interior.
-outer_d=pipe_od+0.40+2*1.20;
+// Keep wall thickness equal across fits; OD follows the chosen cylindrical ID.
+wall=1.20;
 bore_clearance=fit=="firm" ? 0.40 : fit=="id_21_54" ? 0.20 : 0.10;
 bore_d=pipe_od+bore_clearance;
-wall=(outer_d-bore_d)/2; // 1.20 / 1.30 / 1.35 mm
+outer_d=bore_d+2*wall; // 24.14 / 23.94 / 23.84 mm
 roof=1.20;
 insertion=8.00;
 contact_d=pipe_od-0.40; // Firm contact diameter remains 20.94 mm in all trials.
