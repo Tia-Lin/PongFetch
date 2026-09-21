@@ -1,20 +1,22 @@
-// PongFetch A1 decorative pipe-end cap prototype. Units: mm.
-// CC BY-NC-SA 4.0, original design: PongFetch / Tia-Lin.
-// Not a suspension attachment. Fit is unvalidated; use actual pipe measurements.
+// PongFetch A3: reduced-bore trials with the user-tested Firm rib contact diameter.
+// Original design: PongFetch / Tia-Lin, CC BY-NC-SA 4.0. Units: mm.
+// Firm is user-tested; reduced-bore variants still require physical testing.
 part="cap"; // [cap,body,inlay,fit_ring]
+fit="firm"; // [firm,id_21_54,id_21_44]
+assert(fit=="firm" || fit=="id_21_54" || fit=="id_21_44", "Unknown fit");
 pipe_od=21.34;
-bore_clearance=0.40; // Diametral clearance of the cylindrical bore.
-wall=1.20;
+// Keep the exterior fixed so the trial changes only the cylindrical interior.
+outer_d=pipe_od+0.40+2*1.20;
+bore_clearance=fit=="firm" ? 0.40 : fit=="id_21_54" ? 0.20 : 0.10;
+bore_d=pipe_od+bore_clearance;
+wall=(outer_d-bore_d)/2; // 1.20 / 1.30 / 1.35 mm
 roof=1.20;
 insertion=8.00;
-contact_d=21.24; // Three rib tips; change +/-0.10 for fit trials.
+contact_d=pipe_od-0.40; // Firm contact diameter remains 20.94 mm in all trials.
 inlay_depth=0.40;
 $fn=128;
 eps=0.01;
-bore_d=pipe_od+bore_clearance;
-outer_d=bore_d+2*wall;
 height=roof+insertion;
-
 assert(contact_d<=bore_d);
 assert(roof>inlay_depth+0.6);
 

@@ -1,0 +1,66 @@
+{
+  "A3_ID21_44.stl": {
+    "watertight": true,
+    "solid_components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        9.199999809265137
+      ]
+    ],
+    "rib_tip_contact_diameter_at_z4_mm": 20.939998626708984,
+    "volume_mm3": 1313.597293571628,
+    "added_material_relative_to_firm_mm3": 78.10199094250966,
+    "removed_from_firm_mm3": 1.8387576662670657e-08,
+    "sha256": "752e4619e98fb01a8178568cab0f040fcfbbf11dda09d7062450f6befba5f3ff"
+  },
+  "A3_ID21_54.stl": {
+    "watertight": true,
+    "solid_components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        9.199999809265137
+      ]
+    ],
+    "rib_tip_contact_diameter_at_z4_mm": 20.939998626708984,
+    "volume_mm3": 1287.628549257505,
+    "added_material_relative_to_firm_mm3": 52.133246610840054,
+    "removed_from_firm_mm3": 8.876312337924297e-09,
+    "sha256": "02f22aab7f7125895dc7678c09bc3e1708fdef905ea1fecb966573018ce4af90"
+  },
+  "A3_firm.stl": {
+    "watertight": true,
+    "solid_components": 1,
+    "bounds_mm": [
+      [
+        -12.069999694824219,
+        -12.069999694824219,
+        0.0
+      ],
+      [
+        12.069999694824219,
+        12.069999694824219,
+        9.199999809265137
+      ]
+    ],
+    "rib_tip_contact_diameter_at_z4_mm": 20.939998626708984,
+    "volume_mm3": 1235.4953011506495,
+    "added_material_relative_to_firm_mm3": 0.0,
+    "removed_from_firm_mm3": 0.0,
+    "sha256": "de53e278a057843cb8aea39d0cd3bfd5f43e0f5cfd908c677048bc02204842c4"
+  },
+  "firm_byte_identical_to_tested_A2": true
+}

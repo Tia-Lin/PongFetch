@@ -1,33 +1,4 @@
 {
-  "A": {
-    "geometry_preserved": [
-      {
-        "part": "A_body.stl",
-        "symmetric_difference_mm3": 0.0,
-        "bounds_after_part_transform": [
-          -12.069999694824219,
-          -12.069999694824219,
-          0.0,
-          12.069999694824219,
-          12.069999694824219,
-          9.199999809265137
-        ]
-      },
-      {
-        "part": "A_inlay.stl",
-        "symmetric_difference_mm3": 0.0,
-        "bounds_after_part_transform": [
-          -5.350250244140625,
-          -7.03759765625,
-          0.0,
-          6.4499969482421875,
-          5.9499969482421875,
-          0.4000000059604645
-        ]
-      }
-    ],
-    "gcode_in_delivery": false
-  },
   "D": {
     "geometry_preserved": [
       {

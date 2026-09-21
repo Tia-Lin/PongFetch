@@ -1,0 +1,10 @@
+{
+  "A3_Reduced_ID_X2D_PETG_Basic.3mf": "2a60e45d13c2eb695761ad8045e799226c46eecc9c1ec73e5a1627050f4abab1",
+  "A3_firm.stl": "de53e278a057843cb8aea39d0cd3bfd5f43e0f5cfd908c677048bc02204842c4",
+  "README.md": "41c4a7eba2c883fa5489a0e53386a6fb3a3c0249454306d82dd88393e1b2e790",
+  "A3_ID21_44.stl": "752e4619e98fb01a8178568cab0f040fcfbbf11dda09d7062450f6befba5f3ff",
+  "A3_ID21_54.stl": "02f22aab7f7125895dc7678c09bc3e1708fdef905ea1fecb966573018ce4af90",
+  "source/EndCapA.scad": "d1c2d4815d62b967907df3001abb53f01b28a3c5abc6a8991ae6f941b25db210",
+  "verification/mesh-check.json": "1c24efd6ff59a4800da7609224eba587fe9588957c6963ca0222082202afd947",
+  "verification/A3-slice-settings.json": "456697fece97777e5be983c9cf5180689f4c7cede278bc546d1952b24586748e"
+}

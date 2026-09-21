@@ -49,11 +49,11 @@
     },
     {
       "key": "prediction",
-      "value": "1078"
+      "value": "1127"
     },
     {
       "key": "weight",
-      "value": "2.84"
+      "value": "3.02"
     },
     {
       "key": "pause_count",
@@ -102,8 +102,8 @@
       "tray_info_idx": "GFG00",
       "type": "PETG",
       "color": "#E6BE24",
-      "used_m": "0.95",
-      "used_g": "2.84",
+      "used_m": "1.00",
+      "used_g": "3.02",
       "group_id": "0",
       "nozzle_diameter": "0.40",
       "volume_type": "Standard",

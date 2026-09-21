@@ -1,32 +1,6 @@
-# PongFetch handle tops — prototype 1
+# PongFetch D — removable hanging eye
 
-**User feedback, 2026-09-20:** D works very well in the user's trial; A1 fits loosely. See [A2 same-height fit trials](../end-cap-a2/README.md) for the next A iteration. D geometry is unchanged. This feedback is not a quantified load or endurance test.
-
-Two interchangeable accessories for the **free end** of a PVC handle. These are separate prototypes; the tested rev3.0 picker, socket, collet and cap are unchanged. Target PVC outside diameter: **21.34 mm**. Neither accessory uses the pipe's inside diameter as a fit reference.
-
-![Actual exported geometry](verification/design-overview.jpg)
-
-## A — thin decorative cap
-
-| Feature | Dimension |
-|---|---:|
-| Outside diameter | 24.14 mm |
-| Overall height / tube insertion | 9.20 / 8.00 mm |
-| Wall / closed face | 1.20 / 1.20 mm |
-| Main bore | 21.74 mm |
-| Three rounded rib contact diameter | 21.24 mm |
-| Flush paddle-and-ball inlay | 0.40 mm deep |
-
-Only the 1.2 mm closed face projects beyond the fully seated pipe end. Three rounded ribs give light retention, with a tapered entrance. The nominal rib-tip diameter is 0.10 mm smaller than the nominal pipe diameter; this is a trial fit, not a guaranteed printed interference. This cap is **decorative, not a hanging attachment**.
-
-Print `A_fit_ring.stl` first (about 0.5 g of solid PETG). This 4.8 mm ring preserves the real opening taper, but its shorter contact length cannot predict full-cap removal force. If tight, increase `contact_d` in 0.10 mm steps; if loose, decrease it. Do not force an undersized ring onto the pipe.
-
-- `A_Prototype_X2D_PETG_Basic.3mf`: native Bambu project with body and flush inlay grouped, two PETG colours. Re-slice after selecting the actual spools/nozzle mapping.
-- `A_plain.stl`: complete one-colour cap with no visible logo.
-- `A_body.stl` + `A_inlay.stl`: alternative multipart import; import together, preserve relative coordinates and assign colours. Do not print the inlay separately or independently centre the parts.
-- `source/EndCapA.scad`: editable geometry, no external library required.
-
-Print with the closed exterior/logo face on the bed and opening upward. The logo occupies the first two 0.20 mm layers. Estimated slice: **18 min, 1.67 g** with the saved X2D profile; actual start-up, colour-change and purge use may differ.
+The user reports that D works very well. Its geometry and native printing project are unchanged. Older loose A end caps have been retired; the current [A3 reduced-ID trials](../end-cap-a3/README.md) starts at the user-tested Firm fit. Historical files remain available in Git history.
 
 ## D — removable hanging eye with integral clamp
 
@@ -65,32 +39,12 @@ First check thread engagement without the pipe, then check fit on the actual pip
 
 Use `D_Prototype_X2D_PETG_Basic.3mf`, or import the two STLs in their supplied orientations. Body: six finger tips on the bed, eye upright. Nut: smaller end down. The project adds a **2 mm external brim only to the body**, with 0.15 mm separation, to help its six separate starting feet; this is slicer-generated, not permanent breakaway ears in the CAD.
 
-Both projects use X2D, 0.4 mm nozzle, textured PEI, Bambu PETG Basic, **0.20 mm first layer and subsequent layers, 4 walls, 20% gyroid, support disabled**. Narrow sections contain as many wall lines as fit; setting four walls does not thicken the 1.2 mm A shell. The D two-part slice estimates **1 h 45 min and 23.30 g**, including the saved brim/toolpath settings.
+The D project uses X2D, 0.4 mm nozzle, textured PEI, Bambu PETG Basic, **0.20 mm first layer and subsequent layers, 4 walls, 20% gyroid, support disabled**. The D two-part slice estimates **1 h 45 min and 23.30 g**, including the saved brim/toolpath settings.
 
 The upright body orientation prioritizes printable threads and fingers. It leaves layer interfaces across the hanging load direction; the wide eye and shoulder help distribute load, but do not eliminate that weakness. Do not assume slicing success proves long-term strength.
 
-## Verification performed
+## Verification and source
 
-- OpenSCAD 2021.01 exports; BOSL2 2.0.716 for D's thread generation.
-- All six delivered STL files have closed, consistently oriented meshes; D body and nut are each one solid. The A inlay intentionally contains two solids (paddle and ball).
-- Rigid geometry sweep through the nominal 0–2 mm tightening stroke: no unintended upper-body/thread interference. Cone/finger overlap after initial contact represents intended elastic movement; no deformation or stress simulation was performed. At 2.1 mm the shoulder interferes as expected.
-- Layer-section screening at 0.20 mm spacing found no broad unsupported shelves. The rounded slot roots have short local roof spans up to 2.4 mm; these remain real bridging/overhang features and should be inspected on the first print.
-- Native Bambu Studio 02.08.03.66 slicing completed for A and D, with `support_used=false` and `outside=false`. This confirms toolpath generation, not physical print success.
-- Re-imported native 3MF part coordinates preserve the original meshes, including A's flush inlay alignment. Delivered 3MFs are editable projects with G-code removed; re-slice before printing.
-- Detailed geometry and slice records are in `verification/`.
+`source/HangerD.scad` requires separately installed BOSL2 (BSD-2-Clause). Select `part="body"` or `"nut"` for print exports, or `"assembly"`, `"exploded"`, `"section"` for inspection. The actual STL meshes, thread-clearance scan, native slicing settings and layer toolpaths are documented in `verification/`. The user has reported successful use; this is not a quantified long-term load test.
 
-## Source use
-
-For A select `part="cap"`, `"body"`, `"inlay"` or `"fit_ring"` in `source/EndCapA.scad`.
-
-For D install BOSL2 in the OpenSCAD library path and select `part="body"`, `"nut"`, `"assembly"`, `"exploded"` or `"section"` in `source/HangerD.scad`. Only `body` and `nut` exports are print orientations. Assembly and section views are for inspection. In assembly coordinates the nut rotates `360*travel/3` degrees while moving `travel` mm upward.
-
-## 中文试打要点
-
-A 是轻薄装饰帽，先用小试配环检查 PVC 管松紧；双色图案与表面齐平。D 是两件式可拆挂环，先把螺帽套到管上，再套入本体，最后手拧螺帽夹紧。D 图中不同颜色只用于说明结构，打印项目默认单色。
-
-两个项目都按 0.20 mm 层高、4 圈墙、PETG Basic、无支撑准备。D 本体六瓣朝下，增加了 2 mm 切片 brim 帮助首层附着。实际夹紧力、长期滑脱和耐久性还没有实测；先试装、做拔出/扭转检查，再进行低位悬挂观察。原 rev3.0 主体及锁紧件没有修改。
-
-## License
-
-Original accessory designs: PongFetch / Tia-Lin, **CC BY-NC-SA 4.0**; see the included official `CC-BY-NC-SA-4.0.txt`. Based on the PongFetch project at https://github.com/Tia-Lin/PongFetch. BOSL2 is a separately installed BSD-2-Clause dependency and is not included. Bambu Studio and its profile content retain their own terms; the design license does not relicense those components.
+Original design: PongFetch / Tia-Lin, **CC BY-NC-SA 4.0**. Official legal text is included in `CC-BY-NC-SA-4.0.txt`. BOSL2 and Bambu Studio/profile content retain their own terms. The tested rev3.0 picker is unchanged.
