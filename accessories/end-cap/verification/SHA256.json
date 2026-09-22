@@ -1,0 +1,12 @@
+{
+  "PongFetch_EndCap_Logo_X2D_PETG_Basic.3mf": "87c0841b72f871b02f2e162b5fdac860f9d7d16abdf45c90159687c6f4c6a912",
+  "EndCap_plain.stl": "a3dfdcbe0a6321269207a80221a1713aef6785e7e5f25df84101ce579db06107",
+  "EndCap_logo.stl": "d0446a908543025d069f14a7dc4c7162ef8b118e5f6579ad848d56f320597703",
+  "README.md": "5373b7ce4c80fcd0f99be41b78350505e03a582e4e30cb10721690d139cfd99a",
+  "EndCap_body.stl": "0f231aa02aae78eda66c6202f9949df5d39ad824c417ed20dfab8157323be613",
+  "source/EndCap.scad": "5bb9ddfcc7f686fb23202e4bdfe1300f82302908e21eb85a7addf550fdbbd0cc",
+  "verification/geometry.json": "02a0cf25e1d5eaa5fd74b1cf297021951ec6745db1862bfe926650de2929296f",
+  "verification/A-slice-settings.json": "315cb44316617002e967f867f10b5b7e94fac418ab43172a9310705ede78beff",
+  "verification/EndCap.png": "0b89036809973b71511d643f7cebfc04ee07e5786f3b8208feb9b1cef7637499",
+  "verification/native-project.json": "a16b63cfc32bbbdc81b92fe5e4aa6ad8366e01bacf3f21b6cf371d8e37993e6f"
+}

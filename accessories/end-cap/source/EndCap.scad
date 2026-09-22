@@ -1,18 +1,16 @@
-// PongFetch A3: reduced-bore trials with the user-tested Firm rib contact diameter.
+// PongFetch final decorative end cap: user-selected ID 21.44, OD 23.84, wall 1.20 mm.
 // Original design: PongFetch / Tia-Lin, CC BY-NC-SA 4.0. Units: mm.
-// Firm is user-tested; reduced-bore variants still require physical testing.
-part="cap"; // [cap,body,inlay,fit_ring]
-fit="firm"; // [firm,id_21_54,id_21_44]
-assert(fit=="firm" || fit=="id_21_54" || fit=="id_21_44", "Unknown fit");
+// User approved the plain fit on 2026-09-22; flush logo is restored without changing fit.
+part="assembly"; // [assembly,body,inlay,cap]
 pipe_od=21.34;
-// Keep wall thickness equal across fits; OD follows the chosen cylindrical ID.
+// Selected fit; preserve the dimensions validated by the user.
 wall=1.20;
-bore_clearance=fit=="firm" ? 0.40 : fit=="id_21_54" ? 0.20 : 0.10;
+bore_clearance=0.10;
 bore_d=pipe_od+bore_clearance;
-outer_d=bore_d+2*wall; // 24.14 / 23.94 / 23.84 mm
+outer_d=bore_d+2*wall; // 23.84 mm
 roof=1.20;
 insertion=8.00;
-contact_d=pipe_od-0.40; // Firm contact diameter remains 20.94 mm in all trials.
+contact_d=pipe_od-0.40; // Selected rib contact diameter: 20.94 mm.
 inlay_depth=0.40;
 $fn=128;
 eps=0.01;
@@ -69,10 +67,17 @@ module ink() {
     linear_extrude(inlay_depth) paddle_mark();
 }
 
-if(part=="cap") cap();
-else if(part=="body") difference() { cap(); translate([0,0,-eps]) linear_extrude(inlay_depth+eps) paddle_mark(); }
-else if(part=="inlay") ink();
-else if(part=="fit_ring") intersection() {
-    translate([0,0,-(height-4.8)]) cap();
-    cylinder(d=outer_d+1,h=4.8);
+module logo_body() {
+    difference() {
+        cap();
+        translate([0,0,-eps]) linear_extrude(inlay_depth+eps) paddle_mark();
+    }
 }
+
+if(part=="assembly") {
+    color("Gold") logo_body();
+    color([0.025,0.19,0.29]) ink();
+}
+else if(part=="cap") cap();
+else if(part=="body") logo_body();
+else if(part=="inlay") ink();

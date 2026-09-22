@@ -1,0 +1,16 @@
+{
+  "assembled_objects": 1,
+  "parts": [
+    {
+      "part": "EndCap_body.stl",
+      "symmetric_difference_from_STL_mm3": 0.0,
+      "extruder": "1"
+    },
+    {
+      "part": "EndCap_logo.stl",
+      "symmetric_difference_from_STL_mm3": 0.0,
+      "extruder": "2"
+    }
+  ],
+  "gcode_in_delivery": false
+}

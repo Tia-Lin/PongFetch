@@ -1,6 +1,6 @@
 # PongFetch D — removable hanging eye
 
-The user reports that D works very well. Its geometry and native printing project are unchanged. Older loose A end caps have been retired; the current [A3 reduced-ID trials](../end-cap-a3/README.md) starts at the user-tested Firm fit. Historical files remain available in Git history.
+The user reports that D works very well. Its geometry and native printing project are unchanged. Older loose A end caps have been retired; the user-selected [final decorative cap](../end-cap/README.md) now includes the flush paddle-and-ball logo. Historical files remain available in Git history.
 
 ## D — removable hanging eye with integral clamp
 

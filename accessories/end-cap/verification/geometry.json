@@ -1,0 +1,61 @@
+{
+  "EndCap_plain": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 1209.7082599989365,
+    "bounds_mm": [
+      [
+        -11.919999122619629,
+        -11.919999122619629,
+        0.0
+      ],
+      [
+        11.919999122619629,
+        11.919999122619629,
+        9.199999809265137
+      ]
+    ],
+    "sha256": "a3dfdcbe0a6321269207a80221a1713aef6785e7e5f25df84101ce579db06107"
+  },
+  "EndCap_body": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 1183.0762852762282,
+    "bounds_mm": [
+      [
+        -11.919999122619629,
+        -11.919999122619629,
+        0.0
+      ],
+      [
+        11.919999122619629,
+        11.919999122619629,
+        9.199999809265137
+      ]
+    ],
+    "sha256": "0f231aa02aae78eda66c6202f9949df5d39ad824c417ed20dfab8157323be613"
+  },
+  "EndCap_logo": {
+    "watertight": true,
+    "components": 2,
+    "volume_mm3": 26.632000517809768,
+    "bounds_mm": [
+      [
+        -5.350250244140625,
+        -7.03759765625,
+        0.0
+      ],
+      [
+        6.4499969482421875,
+        5.9499969482421875,
+        0.4000000059604645
+      ]
+    ],
+    "sha256": "d0446a908543025d069f14a7dc4c7162ef8b118e5f6579ad848d56f320597703"
+  },
+  "assembly": {
+    "logo_body_overlap_mm3": 9.469833297252456e-06,
+    "symmetric_difference_from_user_selected_plain_mm3": 0.0,
+    "plain_byte_identical_to_user_selected_sample": true
+  }
+}
