@@ -2,7 +2,7 @@
   "D": {
     "geometry_preserved": [
       {
-        "part": "D_body.stl",
+        "part": "Hanger_body.stl",
         "symmetric_difference_mm3": 1.595882926908528e-05,
         "bounds_after_part_transform": [
           -17.700000762939453,
@@ -14,7 +14,7 @@
         ]
       },
       {
-        "part": "D_nut.stl",
+        "part": "Hanger_nut.stl",
         "symmetric_difference_mm3": 0.009745954569351067,
         "bounds_after_part_transform": [
           -17.5,

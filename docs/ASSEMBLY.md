@@ -13,3 +13,7 @@ The four labels are oriented for reading from outside the closed frame: front (a
 2. 网放在翻片与外框之间，用挂网销穿入网孔；沿相邻两扣之间的通道走网，角部留适当松量。翻片旋转约 90° 后锁住，网不能压在解锁弹片上。
 3. 螺帽和夹头套上 PVC 管，再插入管座。定位裙进入座孔，法兰贴住端面，手拧螺帽并检查防滑和可拆性，不需要胶水。
 4. 用少量球试捡，检查网与把手固定情况。倒球时从网袋开放端倒出。
+
+## Optional handle-end accessories
+
+Use either the [decorative end cap](../Accessories/EndCap/README.md) or the [removable hanger](../Accessories/Hanger/README.md) on the free end of the PVC tube. The decorative cap is not a suspension attachment. For hanging, slide the hanger nut onto the tube first, seat the hanger body, then hand-tighten the nut toward the eye.

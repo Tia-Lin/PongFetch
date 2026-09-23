@@ -13,8 +13,11 @@ def digest(path):
 
 def main():
     report = {'revision': '3.0', 'tag': 'v3.0', 'repository': 'https://github.com/Tia-Lin/PongFetch',
-              'checks': [], 'projects': [], 'sha256': {}}
-    for name, components in [('SmallPicker.stl', 9), ('Collet.stl', 1), ('ColletCap.stl', 1)]:
+              'supplement': 'Accessories 2026-09-22', 'checks': [], 'projects': [], 'sha256': {}}
+    for name, components in [('SmallPicker.stl', 9), ('Collet.stl', 1), ('ColletCap.stl', 1),
+            ('Accessories/EndCap/EndCap_plain.stl', 1), ('Accessories/EndCap/EndCap_body.stl', 1),
+            ('Accessories/EndCap/EndCap_logo.stl', 2), ('Accessories/Hanger/Hanger_body.stl', 1),
+            ('Accessories/Hanger/Hanger_nut.stl', 1)]:
         p = ROOT / name
         result = qa(p, *mesh_data(read_stl(p)))
         for key in ['boundary_edges', 'nonmanifold_edges', 'inconsistent_winding_edges',
@@ -24,8 +27,10 @@ def main():
         report['checks'].append({'file': name, 'mesh_topology': 'pass',
                                  'triangles': result['triangles'], 'components': components})
         print(f'PASS {name}: {components} components; {result["triangles"]} triangles')
-    for name in ['PongFetch_Rev3_Frame.3mf', 'PongFetch_Rev3_Handle_Parts.3mf']:
-        p = ROOT / 'prints' / name
+    for name in ['prints/PongFetch_Rev3_Frame.3mf', 'prints/PongFetch_Rev3_Handle_Parts.3mf',
+                 'Accessories/EndCap/PongFetch_EndCap_Logo_X2D_PETG_Basic.3mf',
+                 'Accessories/Hanger/PongFetch_Hanger_X2D_PETG_Basic.3mf']:
+        p = ROOT / name
         with zipfile.ZipFile(p) as z:
             assert z.testzip() is None, name
             assert not any(n.lower().endswith(('.gcode', '.bgcode')) for n in z.namelist()), name
@@ -47,7 +52,7 @@ def main():
                     assignments.append({'name': pm.get('name'), 'slot': slot,
                         'profile': settings['filament_settings_id'][slot-1],
                         'colour': settings['filament_colour'][slot-1]})
-            report['projects'].append({'file': 'prints/'+name, 'archive_integrity': 'pass',
+            report['projects'].append({'file': name, 'archive_integrity': 'pass',
                 'normal_parts': len(normal), 'modifiers': len(modifiers),
                 'settings': {k: settings.get(k) for k in ['printer_model', 'printer_settings_id',
                     'wall_loops', 'layer_height', 'initial_layer_print_height',
@@ -59,6 +64,8 @@ def main():
                  'prints/PongFetch_Rev3_Frame.3mf', 'prints/PongFetch_Rev3_Handle_Parts.3mf',
                  'LICENSE.md', 'CC-BY-NC-SA-4.0.txt']:
         report['sha256'][name] = digest(ROOT / name)
+    for p in sorted((ROOT / 'Accessories').rglob('*')):
+        if p.is_file(): report['sha256'][str(p.relative_to(ROOT))] = digest(p)
     report['scope'] = 'Topology and archive checks; no new native slice, physical print, self-intersection or lifetime certification.'
     (ROOT / 'verification').mkdir(exist_ok=True)
     (ROOT / 'verification/release.json').write_text(json.dumps(report, indent=2)+'\n')

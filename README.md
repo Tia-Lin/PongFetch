@@ -6,7 +6,7 @@ Press the frame over 40 mm balls. Three flexible fins let the balls pass into a 
 
 ![PongFetch assembled](previews/rev3-assembly.png)
 
-**[Download rev 3.0](https://github.com/Tia-Lin/PongFetch/releases/tag/v3.0)** · [Printing](prints/PRINTING.md) · [Assembly](docs/ASSEMBLY.md) · [License](LICENSE.md)
+**[Download rev 3.0](https://github.com/Tia-Lin/PongFetch/releases/tag/v3.0)** · [Printing](prints/PRINTING.md) · [Assembly](docs/ASSEMBLY.md) · [Accessories](Accessories/README.md) · [License](LICENSE.md)
 
 ## Make one
 
@@ -24,6 +24,19 @@ The release includes individual print files, an editable-design ZIP, a complete 
 The validated mechanical parts were printed in PETG. Review the saved **4 walls and 0.20 mm layers / first layer**. **Select your actual printer, plate and loaded materials, then re-slice both 3MF projects.** The files save different machine profiles; they are not ready-to-send G-code. See [the exact saved settings](prints/PRINTING.md).
 
 After cooling, release the three thin first-layer ties at each latch. Place the net between the flap and frame, engage the pins through the mesh, and keep the net clear of the release spring. Seat the collet's locating skirt and hand-tighten the cap. No glue is needed.
+
+## Accessories
+
+Two optional attachments for the free end of the same PVC handle are now included in the Maker Bundle and in the separate [Accessories download](https://github.com/Tia-Lin/PongFetch/releases/download/v3.0/PongFetch_Accessories.zip).
+
+| Accessory | Print project | Details |
+| --- | --- | --- |
+| Decorative end cap | [Two-colour end cap](Accessories/EndCap/PongFetch_EndCap_Logo_X2D_PETG_Basic.3mf) | User-selected ID 21.44 mm, OD 23.84 mm, 1.20 mm wall; flush paddle-and-ball logo |
+| Removable hanger (D) | [Hanger and compression nut](Accessories/Hanger/PongFetch_Hanger_X2D_PETG_Basic.3mf) | Two printed parts; clamps to the pipe without glue or drilling |
+
+Both accessory projects save X2D / 0.4 mm / PETG Basic / textured PEI / 0.20 mm layers / 4 walls, with supports disabled. Re-slice for the actual printer and loaded materials. The user has approved the end-cap fit and reported the hanger works well; long-term load capacity is not rated. See [Accessories](Accessories/README.md) for assembly and validation scope.
+
+The 2026-09-22 accessory supplement leaves the core rev 3.0 geometry and published core print files unchanged. The `v3.0` tag still identifies the original core release; updated download bundles record their source commit in `PACKAGE_INFO.json`.
 
 ## What is validated?
 
@@ -75,5 +88,7 @@ Because commercial reuse is restricted, this is a **source-available design for 
 本套件为 rev 3.0：框身（含八只翻片）、压紧夹头、锁紧螺帽各一件。另需网袋和外径约 21.34 mm 的 PVC 管；先量实际管径。优先下载 Release 的 Maker Bundle，双色文字使用框身 3MF，单色 STL 不显示齐平嵌字。
 
 保留已经验证的机械结构及最新打印项目。打开 3MF 后选择自己的打印机、材料和打印板并重新切片；两张打印盘保存的机器配置不同。释放每只翻片的三条首层细筋，再装网、安装可拆把手。详见[打印说明](prints/PRINTING.md)和[装配说明](docs/ASSEMBLY.md)。
+
+可选 [Accessories 配件](Accessories/README.md) 已并入完整下载包：最终双色装饰帽，以及可拆卸 D 挂钩和旋紧环。已有主体可以单独下载 Accessories 包。
 
 采用 **CC BY-NC-SA 4.0（署名—非商业性使用—相同方式共享）**，具体范围以 LICENSE.md 及官方许可原文为准。

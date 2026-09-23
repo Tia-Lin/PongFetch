@@ -1,0 +1,11 @@
+{
+  "Hanger_body.stl": "2da112ce27b89c9adb8742ca9a90874c56f685c93925dd58b1b78a1b4eb88dd9",
+  "Hanger_nut.stl": "c4189e00b889fac029e9d1606d7f7f80e8aa8e5882da6fcd31557bdda360984b",
+  "PongFetch_Hanger_X2D_PETG_Basic.3mf": "5b8251c48edf08fb7a10176361da29dd3f82d44e6bb763e8db325c9030c906cb",
+  "README.md": "cc240ca65cd0ff906492e966c7aa65fd14f2072b4cde5635d3e23f59dc617b59",
+  "source/Hanger.scad": "8c916000fbebcc51c5c2db1a6ba328a16c63de4b703dfd3e2bd2337acf38af9f",
+  "verification/D-slice-settings.json": "30b56cd38fbfced306fb311f442d3f713e65b10d4397602c47032d1190668656",
+  "verification/D-toolpath-sections.png": "93bc7c70167103d2f29edab38e14c8e19ade06080037ede27873c6a307a4fc8b",
+  "verification/mesh-and-clearance.json": "5508f333e46c2e56784218817aa190869de29921afe0a8f2dd948c32fb013406",
+  "verification/native-project-and-overhang-audit.json": "53e14acbfa50b97240cac9d150986c812ac210bcb5c5507ae1f13ad5dbaf2821"
+}

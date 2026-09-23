@@ -2,6 +2,7 @@
   "revision": "3.0",
   "tag": "v3.0",
   "repository": "https://github.com/Tia-Lin/PongFetch",
+  "supplement": "Accessories 2026-09-22",
   "checks": [
     {
       "file": "SmallPicker.stl",
@@ -19,6 +20,36 @@
       "file": "ColletCap.stl",
       "mesh_topology": "pass",
       "triangles": 7596,
+      "components": 1
+    },
+    {
+      "file": "Accessories/EndCap/EndCap_plain.stl",
+      "mesh_topology": "pass",
+      "triangles": 3212,
+      "components": 1
+    },
+    {
+      "file": "Accessories/EndCap/EndCap_body.stl",
+      "mesh_topology": "pass",
+      "triangles": 3676,
+      "components": 1
+    },
+    {
+      "file": "Accessories/EndCap/EndCap_logo.stl",
+      "mesh_topology": "pass",
+      "triangles": 456,
+      "components": 2
+    },
+    {
+      "file": "Accessories/Hanger/Hanger_body.stl",
+      "mesh_topology": "pass",
+      "triangles": 12668,
+      "components": 1
+    },
+    {
+      "file": "Accessories/Hanger/Hanger_nut.stl",
+      "mesh_topology": "pass",
+      "triangles": 6922,
       "components": 1
     }
   ],
@@ -80,6 +111,64 @@
           "colour": "#034638"
         }
       ]
+    },
+    {
+      "file": "Accessories/EndCap/PongFetch_EndCap_Logo_X2D_PETG_Basic.3mf",
+      "archive_integrity": "pass",
+      "normal_parts": 2,
+      "modifiers": 0,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+        "wall_loops": "4",
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid"
+      },
+      "material_assignments": [
+        {
+          "name": "EndCap_body_1",
+          "slot": 1,
+          "profile": "Bambu PETG Basic @BBL X2D 0.4 nozzle",
+          "colour": "#E6BE24"
+        },
+        {
+          "name": "EndCap_logo_1",
+          "slot": 2,
+          "profile": "Bambu PETG Basic @BBL X2D 0.4 nozzle",
+          "colour": "#163951"
+        }
+      ]
+    },
+    {
+      "file": "Accessories/Hanger/PongFetch_Hanger_X2D_PETG_Basic.3mf",
+      "archive_integrity": "pass",
+      "normal_parts": 2,
+      "modifiers": 0,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+        "wall_loops": "4",
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid"
+      },
+      "material_assignments": [
+        {
+          "name": "D_body_1",
+          "slot": 1,
+          "profile": "Bambu PETG Basic @BBL X2D 0.4 nozzle",
+          "colour": "#E6BE24"
+        },
+        {
+          "name": "D_nut_1",
+          "slot": 1,
+          "profile": "Bambu PETG Basic @BBL X2D 0.4 nozzle",
+          "colour": "#E6BE24"
+        }
+      ]
     }
   ],
   "sha256": {
@@ -92,8 +181,30 @@
     "ColletCap.stl": "f19a24c9f3e3d2972f37cffbcac4466654e146eb670139ca6ffe6026cd63e38c",
     "prints/PongFetch_Rev3_Frame.3mf": "1fb5593087e473e268bf7707977f8ad792bcba96b0c2fae52324ad1fe692eac5",
     "prints/PongFetch_Rev3_Handle_Parts.3mf": "663b7ce3c52f35cdb447f74c9b42fc6fdfd6b600f6b878176d1cf19d8574ec1f",
-    "LICENSE.md": "46f8858ba1acfd5d7f07bbae35fcfecadc725d77c64f1ea972cb41c898f72cf9",
-    "CC-BY-NC-SA-4.0.txt": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd"
+    "LICENSE.md": "1d16d4399350937f92d4377e3d5184afe84099f908c5b13f77cbe39225bc269a",
+    "CC-BY-NC-SA-4.0.txt": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+    "Accessories/EndCap/EndCap_body.stl": "0f231aa02aae78eda66c6202f9949df5d39ad824c417ed20dfab8157323be613",
+    "Accessories/EndCap/EndCap_logo.stl": "d0446a908543025d069f14a7dc4c7162ef8b118e5f6579ad848d56f320597703",
+    "Accessories/EndCap/EndCap_plain.stl": "a3dfdcbe0a6321269207a80221a1713aef6785e7e5f25df84101ce579db06107",
+    "Accessories/EndCap/PongFetch_EndCap_Logo_X2D_PETG_Basic.3mf": "0b248d50d63c5e18f67a6ea1dd82856375c92d3ad73e7a80dc71c727a67ea53f",
+    "Accessories/EndCap/README.md": "5373b7ce4c80fcd0f99be41b78350505e03a582e4e30cb10721690d139cfd99a",
+    "Accessories/EndCap/source/EndCap.scad": "5bb9ddfcc7f686fb23202e4bdfe1300f82302908e21eb85a7addf550fdbbd0cc",
+    "Accessories/EndCap/verification/A-slice-settings.json": "315cb44316617002e967f867f10b5b7e94fac418ab43172a9310705ede78beff",
+    "Accessories/EndCap/verification/EndCap.png": "0b89036809973b71511d643f7cebfc04ee07e5786f3b8208feb9b1cef7637499",
+    "Accessories/EndCap/verification/SHA256.json": "aee4b5a18738d24071cf406b2866723ca181c0f2c03b4b2943642c507977d105",
+    "Accessories/EndCap/verification/geometry.json": "02a0cf25e1d5eaa5fd74b1cf297021951ec6745db1862bfe926650de2929296f",
+    "Accessories/EndCap/verification/native-project.json": "a16b63cfc32bbbdc81b92fe5e4aa6ad8366e01bacf3f21b6cf371d8e37993e6f",
+    "Accessories/Hanger/Hanger_body.stl": "2da112ce27b89c9adb8742ca9a90874c56f685c93925dd58b1b78a1b4eb88dd9",
+    "Accessories/Hanger/Hanger_nut.stl": "c4189e00b889fac029e9d1606d7f7f80e8aa8e5882da6fcd31557bdda360984b",
+    "Accessories/Hanger/PongFetch_Hanger_X2D_PETG_Basic.3mf": "5b8251c48edf08fb7a10176361da29dd3f82d44e6bb763e8db325c9030c906cb",
+    "Accessories/Hanger/README.md": "cc240ca65cd0ff906492e966c7aa65fd14f2072b4cde5635d3e23f59dc617b59",
+    "Accessories/Hanger/source/Hanger.scad": "8c916000fbebcc51c5c2db1a6ba328a16c63de4b703dfd3e2bd2337acf38af9f",
+    "Accessories/Hanger/verification/D-slice-settings.json": "30b56cd38fbfced306fb311f442d3f713e65b10d4397602c47032d1190668656",
+    "Accessories/Hanger/verification/D-toolpath-sections.png": "93bc7c70167103d2f29edab38e14c8e19ade06080037ede27873c6a307a4fc8b",
+    "Accessories/Hanger/verification/SHA256.json": "73aa121ecb702f0527744f12d9a68c32fcb4fe498f521fc062ea6104b855423d",
+    "Accessories/Hanger/verification/mesh-and-clearance.json": "5508f333e46c2e56784218817aa190869de29921afe0a8f2dd948c32fb013406",
+    "Accessories/Hanger/verification/native-project-and-overhang-audit.json": "53e14acbfa50b97240cac9d150986c812ac210bcb5c5507ae1f13ad5dbaf2821",
+    "Accessories/README.md": "12755d7857c5e45d52ab4bb65aec8eb5d9d9b76f3fc9280faaccfdf9e98c3d72"
   },
   "scope": "Topology and archive checks; no new native slice, physical print, self-intersection or lifetime certification."
 }

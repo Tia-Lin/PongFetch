@@ -1,10 +1,10 @@
 # PongFetch D — removable hanging eye
 
-The user reports that D works very well. Its geometry and native printing project are unchanged. Older loose A end caps have been retired; the user-selected [final decorative cap](../end-cap/README.md) now includes the flush paddle-and-ball logo. Historical files remain available in Git history.
+The user reports that D works very well. Its geometry and native printing project are unchanged. Older loose A end caps have been retired; the user-selected [final decorative cap](../EndCap/README.md) now includes the flush paddle-and-ball logo. Historical files remain available in Git history.
 
 ## D — removable hanging eye with integral clamp
 
-Two parts: `D_body.stl` integrates the eye, male thread and six flexible fingers; `D_nut.stl` provides the female thread and compression cone. The render uses two colours to identify the parts; the supplied D project prints both in one colour.
+Two parts: `Hanger_body.stl` integrates the eye, male thread and six flexible fingers; `Hanger_nut.stl` provides the female thread and compression cone. The render uses two colours to identify the parts; the supplied D project prints both in one colour.
 
 | Feature | Dimension |
 |---|---:|
@@ -33,11 +33,11 @@ The widened finger tips are about Ø27.99 mm and can pass through the female thr
 3. Bring the nut up to the male thread, engage gently and hand-tighten toward the eye. Check that the body cannot readily rotate or pull off. Do not use pliers to force the shoulder closed.
 4. To remove, loosen the nut until the fingers relax, then lift off the body.
 
-First check thread engagement without the pipe, then check fit on the actual pipe. Mark the pipe at the body edge and test the empty picker close to a padded surface. Recheck for slip, rotation or cracks after repeated removal and a 24-hour hanging trial with the intended storage load. Do not treat this prototype as load-rated: PETG creep, layer adhesion and friction have not been physically measured. If the shoulder closes while the pipe still slips, revise the fit rather than applying more torque.
+First check thread engagement without the pipe, then check fit on the actual pipe. Mark the pipe at the body edge and test the empty picker close to a padded surface. Recheck for slip, rotation or cracks after repeated removal and a 24-hour hanging trial with the intended storage load. Do not treat this accessory as load-rated: PETG creep, layer adhesion and friction have not been physically measured. If the shoulder closes while the pipe still slips, revise the fit rather than applying more torque.
 
 ### Printing D
 
-Use `D_Prototype_X2D_PETG_Basic.3mf`, or import the two STLs in their supplied orientations. Body: six finger tips on the bed, eye upright. Nut: smaller end down. The project adds a **2 mm external brim only to the body**, with 0.15 mm separation, to help its six separate starting feet; this is slicer-generated, not permanent breakaway ears in the CAD.
+Use `PongFetch_Hanger_X2D_PETG_Basic.3mf`, or import the two STLs in their supplied orientations. Body: six finger tips on the bed, eye upright. Nut: smaller end down. The project adds a **2 mm external brim only to the body**, with 0.15 mm separation, to help its six separate starting feet; this is slicer-generated, not permanent breakaway ears in the CAD.
 
 The D project uses X2D, 0.4 mm nozzle, textured PEI, Bambu PETG Basic, **0.20 mm first layer and subsequent layers, 4 walls, 20% gyroid, support disabled**. The D two-part slice estimates **1 h 45 min and 23.30 g**, including the saved brim/toolpath settings.
 
@@ -45,6 +45,6 @@ The upright body orientation prioritizes printable threads and fingers. It leave
 
 ## Verification and source
 
-`source/HangerD.scad` requires separately installed BOSL2 (BSD-2-Clause). Select `part="body"` or `"nut"` for print exports, or `"assembly"`, `"exploded"`, `"section"` for inspection. The actual STL meshes, thread-clearance scan, native slicing settings and layer toolpaths are documented in `verification/`. The user has reported successful use; this is not a quantified long-term load test.
+`source/Hanger.scad` requires separately installed BOSL2 (BSD-2-Clause). Select `part="body"` or `"nut"` for print exports, or `"assembly"`, `"exploded"`, `"section"` for inspection. The actual STL meshes, thread-clearance scan, native slicing settings and layer toolpaths are documented in `verification/`. The user has reported successful use; this is not a quantified long-term load test.
 
-Original design: PongFetch / Tia-Lin, **CC BY-NC-SA 4.0**. Official legal text is included in `CC-BY-NC-SA-4.0.txt`. BOSL2 and Bambu Studio/profile content retain their own terms. The tested rev3.0 picker is unchanged.
+Original design: PongFetch / Tia-Lin, **CC BY-NC-SA 4.0**. Official legal text is included at [../../CC-BY-NC-SA-4.0.txt](../../CC-BY-NC-SA-4.0.txt). BOSL2 and Bambu Studio/profile content retain their own terms. The tested rev3.0 picker is unchanged.

@@ -1,4 +1,4 @@
-// PongFetch D1: integral six-finger hanger and compression nut. Prototype.
+// PongFetch D1: integral six-finger hanger and compression nut. Accessories.
 // Original design: PongFetch / Tia-Lin, CC BY-NC-SA 4.0.
 // Assembly coordinates: pipe enters from -Z; body fingers start at Z=0.
 // Nut advances +Z and rotates +360*travel/pitch. Not a rated suspension part.

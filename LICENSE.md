@@ -7,7 +7,7 @@ Canonical license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## Scope
 
-This license applies to the project's original product design and its representations: `SmallPicker.scad`, `SideLatch.scad`, `ColletSocket.scad`, `Branding.scad`; the three product STL meshes; the original design content in the Rev 3.0 frame and handle-parts 3MF projects; original product previews; and the original README, printing and assembly documentation. Corresponding copies of these materials distributed in website download packages carry the same license.
+This license applies to the project's original product design and its representations: `SmallPicker.scad`, `SideLatch.scad`, `ColletSocket.scad`, `Branding.scad`; the three product STL meshes; the original design content in the Rev 3.0 frame and handle-parts 3MF projects; original product previews; and the original README, printing and assembly documentation. It also covers the original SCAD, STL and 3MF design content, previews and documentation under `Accessories/`. Corresponding copies of these materials distributed in website download packages carry the same license.
 
 It does not relicense third-party libraries, fonts, slicer software or third-party profile content. In particular, BOSL2 retains its BSD-2-Clause license; Arial retains its own terms. Neither the library nor the font is bundled in our editable-design download. The website application code and Python utility scripts are outside this design-license grant. No separate software license is added by this notice. The SCAD files are licensed here as editable product-design documents.
 

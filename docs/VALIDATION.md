@@ -21,3 +21,7 @@ It also verifies each 3MF's ZIP integrity, XML/JSON readability, absence of mach
 The original Rev 3.0 lettering was checked for assembled orientation and all 36 glyph islands had coloured toolpaths in the first three 0.20 mm layers during an earlier native Bambu Studio 02.08.03.66 slice. The current projects subsequently received user-saved machine/material settings. That earlier slice is not certification of the current saved profile combination.
 
 The latest projects remain unsliced. Re-slice them for your actual machine and inspect the bed layout, first-layer contact, moving clearances, bridges and colour assignments. Coloured surface finish, mixed-material bonding and long-term durability require physical validation.
+
+## Accessories supplement
+
+The user selected the tightest equal-wall cap (ID 21.44, OD 23.84, wall 1.20 mm) and approved the final logo version for inclusion. The user reports the D hanger works very well. This is practical fit/use feedback, not a measured load rating or fatigue test. The logo was verified digitally to preserve the selected cap envelope. Accessory reports include native slicing, part alignment and mesh checks. Release promotion changes names and documentation only; STL hashes and all 3MF mesh payloads are preserved.

@@ -40,3 +40,7 @@ The mechanical baseline has physical print feedback. Earlier Rev 3.0 digital che
 - 保留八个桥接修改器、双色零件的相对位置和原有打印方向。检查首层及换色塔的位置。
 - 冷却后逐一抠断八只翻片各自的上、中、下三条首层细筋，再检查回弹；齐平文字不能剥除。
 - 夹头六瓣朝下、定位裙朝上，保留小件盘的夹头 brim。框身、夹头和帽的机械外形没有因本次发布改变。
+
+## Accessories
+
+The [Accessories folder](../Accessories/README.md) contains the end-cap and hanger print projects. Both save X2D, 0.4 mm, textured PEI, PETG Basic, 0.20 mm layers and four walls, support disabled. The end-cap logo is flush and bed-facing; the hanger body prints finger-tips-down with a 2 mm external brim. These are independent projects and do not change the core profiles above. Re-slice for your actual machine and materials.

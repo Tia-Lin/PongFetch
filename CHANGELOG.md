@@ -1,5 +1,14 @@
 # Changelog
 
+## Accessories supplement — 2026-09-22
+
+- Add `Accessories/EndCap`: user-selected ID 21.44 / OD 23.84 / wall 1.20 mm cap with flush two-colour paddle-and-ball logo.
+- Add `Accessories/Hanger`: user-tested removable D hanger and compression nut.
+- Retire trial directories and prototype filenames from the published tree.
+- Include both accessories in the Maker Bundle and editable-design download; add a standalone Accessories ZIP.
+- Keep the original `v3.0` tag and core CAD/STL/3MF files unchanged; refreshed bundles identify their source commit.
+
+
 ## 3.0 — 2026-09-14
 
 First public release at [Tia-Lin/PongFetch](https://github.com/Tia-Lin/PongFetch), tag `v3.0`.
